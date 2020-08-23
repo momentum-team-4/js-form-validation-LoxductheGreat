@@ -37,7 +37,7 @@
           <div class="col">
             <div class="input-field" id="cvv-field">
               <label for="cvv">CVV</label>
-              <input id="cvv" type="text" required>
+              <input id="cvv" type="text" required pattern="[0-3]{3}"  >
             </div>
           </div>
           <div class="col">
@@ -51,7 +51,7 @@
           <button id="submit-button" type="submit">Make reservation</button>
         </div>
       </form>
-      <div id="total"></div>
+      <div id="total">The cost is $5 per day</div>
       <script src="script.js"></script>
   </body>
 </html>
